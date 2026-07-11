@@ -1,0 +1,1 @@
+import{_ as t}from"./DlAUqK2U.js";import{c as e,g as r}from"./CNpELJGI.js";const o={},c={class:"bg-primary-bg text-primary-text"};function a(s,n){return r(),e("div",c,"About Page")}const m=t(o,[["render",a]]);export{m as default};
