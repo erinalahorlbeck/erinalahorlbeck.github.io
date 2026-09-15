@@ -1,0 +1,3 @@
+# macOS junk. Never wanted here — deploy.sh also strips these from the build
+# output before copying, so one should never reach this repo again.
+.DS_Store
