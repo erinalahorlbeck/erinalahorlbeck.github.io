@@ -1,1 +1,30 @@
+# wavesycle.com
+#
+# Everything the site actually wants found is under /en/. The exclusions below
+# are deliberate; each one says why, because a Disallow with no reason attached
+# gets removed by the next person who reads the file.
 
+User-agent: *
+Allow: /
+
+# Dutch is not written yet. Every /nl/ route redirects to its /en/ equivalent
+# (middleware/nl-redirect.global.ts) and the Dutch locale file is a set of empty
+# placeholder strings, so a crawled /nl/ page is an empty duplicate of an English
+# one. Remove this line when Dutch content is real — and add the /nl/ URLs to the
+# sitemap in the same breath.
+Disallow: /nl/
+
+# There is deliberately NO entry for /release-preview/. Those pages were deleted
+# outright on 2026-09-15 and their files removed from the Pages repo, so the URLs
+# now return a 404 — and a crawler has to be allowed to FETCH a URL to discover
+# that it is gone. Disallowing them would freeze the old pages in the index
+# instead of clearing them out, which is the opposite of what deleting them was
+# for. Leave this alone until Search Console shows them gone.
+
+# NOT listed here either, and for the same reason: /en/join and
+# /en/releasing-day. Both carry a `noindex` robots meta tag, and a Disallow would
+# stop a crawler fetching the page at all — which means it never reads the
+# noindex, and the URL can still end up indexed from an external link. Blocking
+# and de-indexing are different jobs; noindex is the one that works.
+
+Sitemap: https://wavesycle.com/sitemap.xml
