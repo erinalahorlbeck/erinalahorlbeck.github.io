@@ -1,17 +1,18 @@
 The font files in this directory are used by wavesycle.com as the fallback for
-visitors whose machines do not already have Times New Roman or Arial installed.
+visitors whose machines do not already have Times New Roman installed.
 They are redistributed here under the SIL Open Font License, Version 1.1, whose
 full text follows.
 
   Tinos  - Copyright 2026 The Tinos Project Authors (https://github.com/googlefonts/tinos)
            Metric-compatible with Times New Roman. Serves the brand serif.
-  Arimo  - Copyright 2020 The Arimo Project Authors (https://github.com/googlefonts/arimo)
-           Metric-compatible with Arial. Serves the brand sans.
 
-Both were taken from Google Fonts on 2026-09-30, latin and latin-ext subsets
-only. Times New Roman and Arial themselves are NOT redistributed here - they are
-proprietary to Monotype and are reached through local() on machines that already
-license them. See Encephalon/positioning/Official Brand Typography.md.
+Taken from Google Fonts on 2026-09-30, latin and latin-ext subsets only. Times
+New Roman itself is NOT redistributed here - it is proprietary to Monotype and
+is reached through local() on machines that already license it.
+
+Arimo was removed on 2026-10-01: the brand sans is now each platform's own
+default, so no sans is downloaded. See
+Encephalon/positioning/Official Brand Typography.md.
 
 -------------------------------------------------------------------------------
 
