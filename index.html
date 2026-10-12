@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Redirecting</title>
-    <script>window.location.replace("/en");</script>
+    <script>
+      var first = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+      window.location.replace(first.toLowerCase().indexOf("nl") === 0 ? "/nl" : "/en");
+    </script>
     <link rel="canonical" href="/en">
     <style>body{background:#000;margin:0;height:100vh}</style>
     <meta http-equiv="refresh" content="0;url=/en">

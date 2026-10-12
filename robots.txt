@@ -2,6 +2,5 @@
 
 User-agent: *
 Allow: /
-Disallow: /nl/
 
 Sitemap: https://wavesycle.com/sitemap.xml
