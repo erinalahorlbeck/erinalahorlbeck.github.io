@@ -1,0 +1,1 @@
+import{u as r,R as n,D as s,M as p}from"./B54JqtdG.js";const c={name:"RichText",props:{keypath:{type:String,required:!0},tag:{type:String,default:"p"},params:{type:Object,default:()=>({})}},setup(t){const{t:e}=r(),a=s(()=>p(e(t.keypath,t.params)));return()=>n(t.tag,{innerHTML:a.value})}};export{c as _};
